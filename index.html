@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToolKit Pro - All-in-One Image & PDF Tools</title>
+    <meta name="description" content="Free online tools for images and PDFs. Compress, resize, convert, and optimize your files with our powerful tools.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
     <style>
@@ -68,6 +69,7 @@
             font-weight: 700;
             color: var(--primary);
             font-family: 'Montserrat', sans-serif;
+            text-decoration: none;
         }
         
         .logo i {
@@ -184,6 +186,12 @@
             max-width: 90%;
         }
         
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
         .hero-image {
             position: relative;
             display: flex;
@@ -248,6 +256,17 @@
             position: relative;
             overflow: hidden;
             z-index: 1;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .tool-card-link {
+            text-decoration: none;
+            color: inherit;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
         }
         
         .tool-card::before {
@@ -271,6 +290,25 @@
             height: 100%;
         }
         
+        .tool-card:hover .tool-icon {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            transform: scale(1.1);
+        }
+        
+        .tool-card:hover h3 {
+            color: white;
+        }
+        
+        .tool-card:hover p {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .tool-card:hover .btn-sm {
+            background: white;
+            color: var(--primary);
+        }
+        
         .tool-icon {
             width: 80px;
             height: 80px;
@@ -285,35 +323,26 @@
             transition: var(--transition);
         }
         
-        .tool-card:hover .tool-icon {
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            transform: scale(1.1);
-        }
-        
         .tool-card h3 {
             font-size: 1.5rem;
             margin-bottom: 15px;
             transition: var(--transition);
         }
         
-        .tool-card:hover h3 {
-            color: white;
-        }
-        
         .tool-card p {
             color: var(--gray);
             margin-bottom: 20px;
             transition: var(--transition);
-        }
-        
-        .tool-card:hover p {
-            color: rgba(255, 255, 255, 0.8);
+            flex: 1;
         }
         
         .btn-sm {
             padding: 8px 20px;
             font-size: 0.9rem;
+            display: inline-block;
+            width: fit-content;
+            margin: 0 auto;
+            transition: var(--transition);
         }
         
         /* Categories */
@@ -368,6 +397,21 @@
             display: flex;
             align-items: center;
             gap: 10px;
+        }
+        
+        .tool-list li a {
+            text-decoration: none;
+            color: var(--dark);
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+        }
+        
+        .tool-list li a:hover {
+            color: var(--primary);
+            transform: translateX(5px);
         }
         
         .tool-list li i {
@@ -556,6 +600,10 @@
                 max-width: 80%;
                 margin: 0 auto;
             }
+            
+            .hero-buttons {
+                justify-content: center;
+            }
         }
         
         @media (max-width: 768px) {
@@ -608,10 +656,10 @@
     <header>
         <div class="container">
             <nav class="navbar">
-                <div class="logo">
+                <a href="#" class="logo">
                     <i class="fas fa-toolbox"></i>
                     <span>ToolKit Pro</span>
-                </div>
+                </a>
                 <div class="nav-links">
                     <a href="#">Home</a>
                     <a href="#">Image Tools</a>
@@ -656,58 +704,70 @@
             <div class="tools-grid">
                 <!-- Image Tools -->
                 <div class="tool-card">
-                    <div class="tool-icon">
-                        <i class="fas fa-compress-alt"></i>
-                    </div>
-                    <h3>Image Compressor</h3>
-                    <p>Reduce image file size without losing quality</p>
-                    <a href="imag-compressor" class="btn btn-sm btn-outline">Use Tool</a>
+                    <a href="image-compressor.html" class="tool-card-link">
+                        <div class="tool-icon">
+                            <i class="fas fa-compress-alt"></i>
+                        </div>
+                        <h3>Image Compressor</h3>
+                        <p>Reduce image file size without losing quality</p>
+                        <span class="btn btn-sm btn-outline">Use Tool</span>
+                    </a>
                 </div>
                 
                 <div class="tool-card">
-                    <div class="tool-icon">
-                        <i class="fas fa-exchange-alt"></i>
-                    </div>
-                    <h3>Image Converter</h3>
-                    <p>Convert between JPG, PNG, WebP and more</p>
-                    <a href="#" class="btn btn-sm btn-outline">Use Tool</a>
+                    <a href="image-resizer.html" class="tool-card-link">
+                        <div class="tool-icon">
+                            <i class="fas fa-expand-alt"></i>
+                        </div>
+                        <h3>Image Resizer</h3>
+                        <p>Resize images to any dimension instantly</p>
+                        <span class="btn btn-sm btn-outline">Use Tool</span>
+                    </a>
                 </div>
                 
                 <div class="tool-card">
-                    <div class="tool-icon">
-                        <i class="fas fa-crop-alt"></i>
-                    </div>
-                    <h3>Image Resizer</h3>
-                    <p>Resize images to any dimension instantly</p>
-                    <a href="#" class="btn btn-sm btn-outline">Use Tool</a>
+                    <a href="image-converter.html" class="tool-card-link">
+                        <div class="tool-icon">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <h3>Image Converter</h3>
+                        <p>Convert between JPG, PNG, WebP and more</p>
+                        <span class="btn btn-sm btn-outline">Use Tool</span>
+                    </a>
                 </div>
                 
                 <!-- PDF Tools -->
                 <div class="tool-card">
-                    <div class="tool-icon">
-                        <i class="fas fa-file-pdf"></i>
-                    </div>
-                    <h3>PDF Compressor</h3>
-                    <p>Reduce PDF file size while preserving quality</p>
-                    <a href="#" class="btn btn-sm btn-outline">Use Tool</a>
+                    <a href="pdf-compressor.html" class="tool-card-link">
+                        <div class="tool-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <h3>PDF Compressor</h3>
+                        <p>Reduce PDF file size while preserving quality</p>
+                        <span class="btn btn-sm btn-outline">Use Tool</span>
+                    </a>
                 </div>
                 
                 <div class="tool-card">
-                    <div class="tool-icon">
-                        <i class="fas fa-file-word"></i>
-                    </div>
-                    <h3>PDF to Word</h3>
-                    <p>Convert PDF documents to editable Word files</p>
-                    <a href="#" class="btn btn-sm btn-outline">Use Tool</a>
+                    <a href="pdf-to-word.html" class="tool-card-link">
+                        <div class="tool-icon">
+                            <i class="fas fa-file-word"></i>
+                        </div>
+                        <h3>PDF to Word</h3>
+                        <p>Convert PDF documents to editable Word files</p>
+                        <span class="btn btn-sm btn-outline">Use Tool</span>
+                    </a>
                 </div>
                 
                 <div class="tool-card">
-                    <div class="tool-icon">
-                        <i class="fas fa-lock"></i>
-                    </div>
-                    <h3>PDF Protector</h3>
-                    <p>Add passwords and permissions to your PDFs</p>
-                    <a href="#" class="btn btn-sm btn-outline">Use Tool</a>
+                    <a href="pdf-merger.html" class="tool-card-link">
+                        <div class="tool-icon">
+                            <i class="fas fa-file-merge"></i>
+                        </div>
+                        <h3>PDF Merger</h3>
+                        <p>Combine multiple PDFs into a single document</p>
+                        <span class="btn btn-sm btn-outline">Use Tool</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -727,14 +787,14 @@
                     </div>
                     <h3>Image Tools</h3>
                     <ul class="tool-list">
-                        <li><i class="fas fa-check-circle"></i> Image Compressor</li>
-                        <li><i class="fas fa-check-circle"></i> Image Converter</li>
-                        <li><i class="fas fa-check-circle"></i> Image Resizer</li>
-                        <li><i class="fas fa-check-circle"></i> Background Remover</li>
-                        <li><i class="fas fa-check-circle"></i> Image Editor</li>
-                        <li><i class="fas fa-check-circle"></i> Watermark Remover</li>
+                        <li><a href="image-compressor.html"><i class="fas fa-check-circle"></i> Image Compressor</a></li>
+                        <li><a href="image-resizer.html"><i class="fas fa-check-circle"></i> Image Resizer</a></li>
+                        <li><a href="image-converter.html"><i class="fas fa-check-circle"></i> Image Converter</a></li>
+                        <li><a href="background-remover.html"><i class="fas fa-check-circle"></i> Background Remover</a></li>
+                        <li><a href="image-editor.html"><i class="fas fa-check-circle"></i> Image Editor</a></li>
+                        <li><a href="watermark-remover.html"><i class="fas fa-check-circle"></i> Watermark Remover</a></li>
                     </ul>
-                    <a href="#" class="btn btn-outline">View All</a>
+                    <a href="image-tools.html" class="btn btn-outline">View All</a>
                 </div>
                 
                 <div class="category-card">
@@ -743,14 +803,14 @@
                     </div>
                     <h3>PDF Tools</h3>
                     <ul class="tool-list">
-                        <li><i class="fas fa-check-circle"></i> PDF Compressor</li>
-                        <li><i class="fas fa-check-circle"></i> PDF to Word</li>
-                        <li><i class="fas fa-check-circle"></i> PDF to Excel</li>
-                        <li><i class="fas fa-check-circle"></i> PDF Merger</li>
-                        <li><i class="fas fa-check-circle"></i> PDF Splitter</li>
-                        <li><i class="fas fa-check-circle"></i> PDF Editor</li>
+                        <li><a href="pdf-compressor.html"><i class="fas fa-check-circle"></i> PDF Compressor</a></li>
+                        <li><a href="pdf-to-word.html"><i class="fas fa-check-circle"></i> PDF to Word</a></li>
+                        <li><a href="pdf-to-excel.html"><i class="fas fa-check-circle"></i> PDF to Excel</a></li>
+                        <li><a href="pdf-merger.html"><i class="fas fa-check-circle"></i> PDF Merger</a></li>
+                        <li><a href="pdf-splitter.html"><i class="fas fa-check-circle"></i> PDF Splitter</a></li>
+                        <li><a href="pdf-editor.html"><i class="fas fa-check-circle"></i> PDF Editor</a></li>
                     </ul>
-                    <a href="#" class="btn btn-outline">View All</a>
+                    <a href="pdf-tools.html" class="btn btn-outline">View All</a>
                 </div>
                 
                 <div class="category-card">
@@ -759,14 +819,14 @@
                     </div>
                     <h3>Document Tools</h3>
                     <ul class="tool-list">
-                        <li><i class="fas fa-check-circle"></i> Word to PDF</li>
-                        <li><i class="fas fa-check-circle"></i> Excel to PDF</li>
-                        <li><i class="fas fa-check-circle"></i> PPT to PDF</li>
-                        <li><i class="fas fa-check-circle"></i> Document Converter</li>
-                        <li><i class="fas fa-check-circle"></i> OCR Tool</li>
-                        <li><i class="fas fa-check-circle"></i> E-Signature</li>
+                        <li><a href="word-to-pdf.html"><i class="fas fa-check-circle"></i> Word to PDF</a></li>
+                        <li><a href="excel-to-pdf.html"><i class="fas fa-check-circle"></i> Excel to PDF</a></li>
+                        <li><a href="ppt-to-pdf.html"><i class="fas fa-check-circle"></i> PPT to PDF</a></li>
+                        <li><a href="document-converter.html"><i class="fas fa-check-circle"></i> Document Converter</a></li>
+                        <li><a href="ocr-tool.html"><i class="fas fa-check-circle"></i> OCR Tool</a></li>
+                        <li><a href="e-signature.html"><i class="fas fa-check-circle"></i> E-Signature</a></li>
                     </ul>
-                    <a href="#" class="btn btn-outline">View All</a>
+                    <a href="document-tools.html" class="btn btn-outline">View All</a>
                 </div>
             </div>
         </div>
@@ -857,10 +917,10 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <div class="logo">
+                    <a href="#" class="logo">
                         <i class="fas fa-toolbox"></i>
                         <span>ToolKit Pro</span>
-                    </div>
+                    </a>
                     <p>Powerful online tools to compress, convert, edit, and enhance your images and PDF documents.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -873,22 +933,22 @@
                 <div class="footer-col">
                     <h3>Image Tools</h3>
                     <ul class="footer-links">
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Image Compressor</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Image Converter</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Image Resizer</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Background Remover</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Image Editor</a></li>
+                        <li><a href="image-compressor.html"><i class="fas fa-chevron-right"></i> Image Compressor</a></li>
+                        <li><a href="image-resizer.html"><i class="fas fa-chevron-right"></i> Image Resizer</a></li>
+                        <li><a href="image-converter.html"><i class="fas fa-chevron-right"></i> Image Converter</a></li>
+                        <li><a href="background-remover.html"><i class="fas fa-chevron-right"></i> Background Remover</a></li>
+                        <li><a href="image-editor.html"><i class="fas fa-chevron-right"></i> Image Editor</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-col">
                     <h3>PDF Tools</h3>
                     <ul class="footer-links">
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> PDF Compressor</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> PDF to Word</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> PDF to Excel</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> PDF Merger</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> PDF Splitter</a></li>
+                        <li><a href="pdf-compressor.html"><i class="fas fa-chevron-right"></i> PDF Compressor</a></li>
+                        <li><a href="pdf-to-word.html"><i class="fas fa-chevron-right"></i> PDF to Word</a></li>
+                        <li><a href="pdf-to-excel.html"><i class="fas fa-chevron-right"></i> PDF to Excel</a></li>
+                        <li><a href="pdf-merger.html"><i class="fas fa-chevron-right"></i> PDF Merger</a></li>
+                        <li><a href="pdf-splitter.html"><i class="fas fa-chevron-right"></i> PDF Splitter</a></li>
                     </ul>
                 </div>
                 
