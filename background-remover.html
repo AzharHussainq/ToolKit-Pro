@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Removal Tool | Remove Image Backgrounds Online Free - Toolkit-Pro</title>
+    <meta name="description" content="Free online background remover tool. Remove image backgrounds instantly with AI technology. No signup required. Perfect for product photos, portraits, and more.">
+    <meta name="keywords" content="remove background, background remover, remove bg, transparent background, image editing, photo editing, free online tool, remove background from image, ai background removal, remove.bg alternative">
+    <meta name="author" content="Toolkit-Pro">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://toolkit-pro.com/background-remover">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://toolkit-pro.com/background-remover">
+    <meta property="og:title" content="Background Removal Tool | Remove Image Backgrounds Online Free">
+    <meta property="og:description" content="Free online background remover tool. Remove image backgrounds instantly with AI technology. No signup required.">
+    <meta property="og:image" content="https://toolkit-pro.com/images/background-remover-preview.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://toolkit-pro.com/background-remover">
+    <meta property="twitter:title" content="Background Removal Tool | Remove Image Backgrounds Online Free">
+    <meta property="twitter:description" content="Free online background remover tool. Remove image backgrounds instantly with AI technology.">
+    <meta property="twitter:image" content="https://toolkit-pro.com/images/background-remover-preview.jpg">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script type="text/javascript">
+        atOptions = {
+            'key' : '91f4c1b41ef2bc94bb0108103115b089',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    
+    <style>
+        :root {
+            --primary: #4361ee;
+            --primary-dark: #3a56d4;
+            --secondary: #7209b7;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --gray: #6c757d;
+            --success: #4cc9f0;
+            --warning: #f9c74f;
+            --danger: #f94144;
+            --border-radius: 12px;
+            --shadow: 0 4px 20px rgba(0,0,0,0.08);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e7f1 100%);
+            color: var(--dark);
+            line-height: 1.6;
+            min-height: 100vh;
+            padding-bottom: 40px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .home-link {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            transition: var(--transition);
+            z-index: 2;
+        }
+        
+        .home-link:hover {
+            transform: translateY(-50%) scale(1.05);
+        }
+        
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        header p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+            position: relative;
+            z-index: 2;
+        }
+        
+        header::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+            transform: rotate(30deg);
+        }
+        
+        .ad-container {
+            background: white;
+            border-radius: var(--border-radius);
+            margin: 25px auto;
+            padding: 15px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            max-width: 1000px;
+        }
+        
+        .ad-label {
+            display: inline-block;
+            background: var(--gray);
+            color: white;
+            font-size: 0.75rem;
+            padding: 3px 10px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        @media (min-width: 992px) {
+            .main-content {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        .upload-section, .preview-section {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 30px;
+            box-shadow: var(--shadow);
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .section-title i {
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .upload-area {
+            border: 2px dashed #d1d5db;
+            border-radius: var(--border-radius);
+            padding: 40px 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+            background: #f9fafb;
+            position: relative;
+        }
+        
+        .upload-area:hover, .upload-area.drag-over {
+            border-color: var(--primary);
+            background: rgba(67, 97, 238, 0.05);
+        }
+        
+        .upload-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        .upload-text {
+            margin-bottom: 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(67, 97, 238, 0.3);
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(67, 97, 238, 0.4);
+        }
+        
+        .btn:active {
+            transform: translateY(0);
+        }
+        
+        .btn i {
+            margin-right: 8px;
+        }
+        
+        .btn:disabled {
+            background: #c1c4d6;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+        
+        .controls {
+            margin: 30px 0;
+        }
+        
+        .control-group {
+            margin-bottom: 25px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--dark);
+        }
+        
+        .file-info {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 12px;
+            margin-top: 15px;
+            font-size: 0.9rem;
+        }
+        
+        .file-info p {
+            margin-bottom: 5px;
+        }
+        
+        .file-info strong {
+            color: var(--primary);
+        }
+        
+        .actions {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .btn-outline {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+            box-shadow: none;
+        }
+        
+        .btn-outline:hover {
+            background: rgba(67, 97, 238, 0.05);
+        }
+        
+        .progress-container {
+            height: 8px;
+            background: #e9ecef;
+            border-radius: 4px;
+            margin-top: 10px;
+            overflow: hidden;
+        }
+        
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+        
+        .preview-area {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        
+        .image-container {
+            position: relative;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            min-height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .image-container img {
+            max-width: 100%;
+            max-height: 300px;
+            display: block;
+            object-fit: contain;
+        }
+        
+        .image-placeholder {
+            text-align: center;
+            color: var(--gray);
+            padding: 20px;
+        }
+        
+        .image-placeholder i {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            color: #dee2e6;
+        }
+        
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .comparison-item {
+            text-align: center;
+        }
+        
+        .comparison-item h4 {
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+        
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 15px 25px;
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            border-left: 4px solid var(--success);
+            transform: translateX(150%);
+            transition: transform 0.3s ease;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .notification.show {
+            transform: translateX(0);
+        }
+        
+        .notification.error {
+            border-left-color: var(--danger);
+        }
+        
+        .notification.error i {
+            color: var(--danger);
+        }
+        
+        .notification i {
+            font-size: 1.5rem;
+            color: var(--success);
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid rgba(67, 97, 238, 0.2);
+            border-top: 4px solid var(--primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .bg-removal-info {
+            background: #e7f4ff;
+            border-left: 4px solid var(--primary);
+            padding: 15px;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+            margin-top: 25px;
+        }
+        
+        .bg-removal-info h3 {
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+        
+        .bg-removal-tips {
+            background: #fff8e6;
+            border-left: 4px solid var(--warning);
+            padding: 15px;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+            margin-top: 15px;
+        }
+        
+        .bg-removal-tips h3 {
+            margin-bottom: 10px;
+            color: var(--warning);
+        }
+        
+        .bg-removal-tips ul {
+            padding-left: 20px;
+        }
+        
+        .bg-removal-tips li {
+            margin-bottom: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .comparison {
+                grid-template-columns: 1fr;
+            }
+            
+            .actions {
+                flex-direction: column;
+            }
+            
+            .home-link {
+                position: relative;
+                left: 0;
+                top: 0;
+                transform: none;
+                margin-bottom: 15px;
+            }
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+        
+        .seo-content {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 30px;
+            box-shadow: var(--shadow);
+            margin-top: 30px;
+            line-height: 1.8;
+        }
+        
+        .seo-content h2 {
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .seo-content h3 {
+            color: var(--secondary);
+            margin: 25px 0 15px;
+        }
+        
+        .seo-content p {
+            margin-bottom: 15px;
+        }
+        
+        .seo-content ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .seo-content li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .seo-content li:before {
+            content: "•";
+            color: var(--primary);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        
+        .faq-question {
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 10px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-answer {
+            color: var(--dark);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="home-link">
+                    <i class="fas fa-arrow-left"></i> Back to Home
+                </a>
+                <h1><i class="fas fa-cut"></i> BackgroundRemover Pro</h1>
+                <p>Remove backgrounds from your images instantly with AI-powered technology. Free online tool.</p>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <!-- Top Ad Container -->
+        <div class="ad-container">
+            <span class="ad-label">ADVERTISEMENT</span>
+            <script type="text/javascript" src="//www.highperformanceformat.com/91f4c1b41ef2bc94bb0108103115b089/invoke.js"></script>
+        </div>
+        
+        <div class="main-content">
+            <div class="upload-section">
+                <h2 class="section-title"><i class="fas fa-cloud-upload-alt"></i> Upload Image</h2>
+                
+                <div class="upload-area" id="dropArea">
+                    <div class="upload-icon">
+                        <i class="fas fa-file-image"></i>
+                    </div>
+                    <p class="upload-text">Drag & drop your image here or click to browse</p>
+                    <button class="btn" id="browseBtn"><i class="fas fa-folder-open"></i> Select Image</button>
+                    <input type="file" id="fileInput" accept="image/*" class="hidden">
+                </div>
+                
+                <div id="fileDetails" class="file-info hidden">
+                    <p><strong>File name:</strong> <span id="fileName">No file selected</span></p>
+                    <p><strong>File size:</strong> <span id="fileSize">0 KB</span></p>
+                    <div class="progress-container">
+                        <div class="progress-bar" id="processProgress"></div>
+                    </div>
+                </div>
+                
+                <div class="controls">
+                    <div class="control-group">
+                        <label>Processing Options</label>
+                        <div class="bg-removal-tips">
+                            <h3>Tips for Best Results</h3>
+                            <ul>
+                                <li>Use images with clear contrast between subject and background</li>
+                                <li>Well-lit photos work best for accurate background removal</li>
+                                <li>For best results, use images with a single main subject</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="btn" id="processBtn" disabled><i class="fas fa-magic"></i> Remove Background</button>
+                
+                <div class="bg-removal-info">
+                    <h3>How Background Removal Works</h3>
+                    <p>Our AI-powered tool automatically detects the subject in your image and removes the background with precision. The process happens securely using Remove.bg's advanced AI technology.</p>
+                </div>
+            </div>
+            
+            <div class="preview-section">
+                <h2 class="section-title"><i class="fas fa-eye"></i> Preview & Download</h2>
+                
+                <div class="preview-area">
+                    <div class="comparison">
+                        <div class="comparison-item">
+                            <h4>Original Image</h4>
+                            <div class="image-container">
+                                <div class="image-placeholder" id="originalPlaceholder">
+                                    <i class="fas fa-image"></i>
+                                    <p>Original image will appear here</p>
+                                </div>
+                                <img id="originalImage" class="hidden">
+                            </div>
+                        </div>
+                        
+                        <div class="comparison-item">
+                            <h4>Background Removed</h4>
+                            <div class="image-container">
+                                <div class="image-placeholder" id="resultPlaceholder">
+                                    <i class="fas fa-image"></i>
+                                    <p>Processed image will appear here</p>
+                                </div>
+                                <img id="resultImage" class="hidden">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="file-info hidden" id="resultInfo">
+                        <p><strong>Format:</strong> <span id="outputFormat">PNG with transparency</span></p>
+                        <p><strong>Processing time:</strong> <span id="processingTime">0 seconds</span></p>
+                    </div>
+                    
+                    <div class="actions">
+                        <button class="btn" id="downloadBtn" disabled><i class="fas fa-download"></i> Download Image</button>
+                        <button class="btn btn-outline" id="newImageBtn"><i class="fas fa-sync-alt"></i> New Image</button>
+                    </div>
+                    
+                    <div class="bg-removal-tips">
+                        <h3>Did You Know?</h3>
+                        <p>Professional background removal services can cost $5-10 per image. Our tool provides this service completely free!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- SEO Content Section -->
+        <section class="seo-content">
+            <h2>Free Online Background Remover Tool</h2>
+            <p>Our advanced background removal tool uses AI technology to automatically remove backgrounds from your images in seconds. Whether you need to remove background from product photos, create professional portraits, or design marketing materials, our tool delivers high-quality results with just a few clicks.</p>
+            
+            <h3>Why Choose Our Background Removal Tool?</h3>
+            <ul>
+                <li><strong>100% Automatic</strong> - Just upload your photo and our AI does the rest</li>
+                <li><strong>High Quality</strong> - Get clean, professional results with transparent PNG output</li>
+                <li><strong>Fast Processing</strong> - Remove backgrounds in seconds, not hours</li>
+                <li><strong>No Registration</strong> - Use our tool without signing up or providing email</li>
+                <li><strong>Completely Free</strong> - Remove backgrounds without paying anything</li>
+            </ul>
+            
+            <h3>How to Remove Image Backgrounds</h3>
+            <p>Removing backgrounds from images has never been easier. Follow these simple steps:</p>
+            <ol>
+                <li>Click the "Select Image" button or drag and drop your image</li>
+                <li>Our AI will automatically process your image and remove the background</li>
+                <li>Preview the result and download your image with transparent background</li>
+            </ol>
+            
+            <h3>Perfect For Various Use Cases</h3>
+            <p>Our background remover tool is ideal for:</p>
+            <ul>
+                <li><strong>E-commerce</strong> - Create clean product images for your online store</li>
+                <li><strong>Photography</strong> - Remove distracting backgrounds from portraits</li>
+                <li><strong>Graphic Design</strong> - Create compositions with transparent elements</li>
+                <li><strong>Marketing</strong> - Design professional advertisements and social media content</li>
+                <li><strong>Personal Use</strong> - Create fun images for social media or personal projects</li>
+            </ul>
+            
+            <h3>Frequently Asked Questions</h3>
+            
+            <div class="faq-item">
+                <div class="faq-question">Is this background remover really free? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">Yes, our background removal tool is completely free to use. There are no hidden charges or premium features.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">What image formats are supported? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">We support all common image formats including JPG, PNG, and WebP. The output is always a PNG file with transparency.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">How does the AI background removal work? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">Our tool uses advanced machine learning algorithms to identify the main subject in your image and separate it from the background automatically.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Are my images stored on your servers? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">No, we value your privacy. Images are processed in real-time and are not stored on our servers after processing is complete.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Can I use this for commercial purposes? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">Yes, you can use the images processed with our tool for both personal and commercial projects without any restrictions.</div>
+            </div>
+        </section>
+        
+        <!-- Bottom Ad Container -->
+        <div class="ad-container">
+            <span class="ad-label">ADVERTISEMENT</span>
+            <script type="text/javascript" src="//www.highperformanceformat.com/91f4c1b41ef2bc94bb0108103115b089/invoke.js"></script>
+        </div>
+    </div>
+    
+    <footer class="container">
+        <p>© 2025 Toolkit-Pro - All rights reserved. Your images are processed securely using Remove.bg API technology.</p>
+    </footer>
+    
+    <div class="notification" id="notification">
+        <i class="fas fa-check-circle"></i>
+        <span id="notificationText">Background removed successfully!</span>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // DOM Elements
+            const fileInput = document.getElementById('fileInput');
+            const browseBtn = document.getElementById('browseBtn');
+            const dropArea = document.getElementById('dropArea');
+            const processBtn = document.getElementById('processBtn');
+            const downloadBtn = document.getElementById('downloadBtn');
+            const newImageBtn = document.getElementById('newImageBtn');
+            const fileName = document.getElementById('fileName');
+            const fileSize = document.getElementById('fileSize');
+            const originalImage = document.getElementById('originalImage');
+            const resultImage = document.getElementById('resultImage');
+            const originalPlaceholder = document.getElementById('originalPlaceholder');
+            const resultPlaceholder = document.getElementById('resultPlaceholder');
+            const fileDetails = document.getElementById('fileDetails');
+            const resultInfo = document.getElementById('resultInfo');
+            const processProgress = document.getElementById('processProgress');
+            const notification = document.getElementById('notification');
+            const notificationText = document.getElementById('notificationText');
+            const processingTime = document.getElementById('processingTime');
+            
+            // Variables
+            let uploadedFile = null;
+            let processedImageData = null;
+            let startTime = null;
+            const API_KEY = 'kEACunxhi3x93WomX1dc1GQX'; // Your Remove.bg API key
+            
+            // Event Listeners
+            browseBtn.addEventListener('click', () => fileInput.click());
+            fileInput.addEventListener('change', handleFileSelect);
+            dropArea.addEventListener('dragover', handleDragOver);
+            dropArea.addEventListener('dragleave', handleDragLeave);
+            dropArea.addEventListener('drop', handleDrop);
+            processBtn.addEventListener('click', processImage);
+            downloadBtn.addEventListener('click', downloadImage);
+            newImageBtn.addEventListener('click', resetTool);
+            
+            // FAQ functionality
+            document.querySelectorAll('.faq-question').forEach(question => {
+                question.addEventListener('click', () => {
+                    const answer = question.nextElementSibling;
+                    answer.classList.toggle('hidden');
+                    question.querySelector('i').classList.toggle('fa-chevron-down');
+                    question.querySelector('i').classList.toggle('fa-chevron-up');
+                });
+            });
+            
+            // Functions
+            function handleFileSelect(e) {
+                const file = e.target.files[0];
+                processFile(file);
+            }
+            
+            function handleDragOver(e) {
+                e.preventDefault();
+                dropArea.classList.add('drag-over');
+            }
+            
+            function handleDragLeave(e) {
+                e.preventDefault();
+                dropArea.classList.remove('drag-over');
+            }
+            
+            function handleDrop(e) {
+                e.preventDefault();
+                dropArea.classList.remove('drag-over');
+                
+                const file = e.dataTransfer.files[0];
+                processFile(file);
+            }
+            
+            function processFile(file) {
+                if (!file || !file.type.match('image.*')) {
+                    showNotification('Please select a valid image file (JPG, PNG, etc.)', 'error');
+                    return;
+                }
+                
+                // Check file size (Remove.bg has a 12MB limit)
+                if (file.size > 12 * 1024 * 1024) {
+                    showNotification('Please select an image smaller than 12MB', 'error');
+                    return;
+                }
+                
+                uploadedFile = file;
+                
+                // Update UI with file info
+                const sizeInKB = (file.size / 1024).toFixed(1);
+                fileName.textContent = file.name;
+                fileSize.textContent = `${sizeInKB} KB`;
+                fileDetails.classList.remove('hidden');
+                
+                // Display the original image
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    originalImage.src = e.target.result;
+                    originalImage.classList.remove('hidden');
+                    originalPlaceholder.classList.add('hidden');
+                };
+                reader.readAsDataURL(file);
+                
+                // Enable process button
+                processBtn.disabled = false;
+                
+                // Hide any previous results
+                resultInfo.classList.add('hidden');
+                resultImage.classList.add('hidden');
+                resultPlaceholder.classList.remove('hidden');
+                downloadBtn.disabled = true;
+                
+                showNotification('Image loaded successfully!', 'success');
+            }
+            
+            function showNotification(message, type = 'success') {
+                notificationText.textContent = message;
+                
+                if (type === 'error') {
+                    notification.classList.add('error');
+                } else {
+                    notification.classList.remove('error');
+                }
+                
+                notification.classList.add('show');
+                setTimeout(() => {
+                    notification.classList.remove('show');
+                }, 3000);
+            }
+            
+            async function processImage() {
+                if (!uploadedFile) return;
+                
+                try {
+                    // Start timing
+                    startTime = new Date();
+                    
+                    // Show loading state
+                    processBtn.disabled = true;
+                    processBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...';
+                    processProgress.style.width = '0%';
+                    
+                    // Create form data for API request
+                    const formData = new FormData();
+                    formData.append('image_file', uploadedFile);
+                    
+                    // Simulate progress
+                    let progress = 0;
+                    const progressInterval = setInterval(() => {
+                        progress += 5;
+                        if (progress <= 85) { // Leave room for actual API progress
+                            processProgress.style.width = `${progress}%`;
+                        }
+                    }, 100);
+                    
+                    // Call Remove.bg API
+                    const response = await fetch('https://api.remove.bg/v1.0/removebg', {
+                        method: 'POST',
+                        headers: {
+                            'X-Api-Key': API_KEY,
+                        },
+                        body: formData
+                    });
+                    
+                    clearInterval(progressInterval);
+                    
+                    if (!response.ok) {
+                        const errorData = await response.json();
+                        throw new Error(errorData.errors ? errorData.errors[0].title : 'Failed to process image');
+                    }
+                    
+                    // Process the response
+                    const blob = await response.blob();
+                    processedImageData = URL.createObjectURL(blob);
+                    
+                    // Update progress to 100%
+                    processProgress.style.width = '100%';
+                    
+                    // Display the result
+                    resultImage.src = processedImageData;
+                    resultImage.classList.remove('hidden');
+                    resultPlaceholder.classList.add('hidden');
+                    
+                    // Calculate processing time
+                    const endTime = new Date();
+                    const timeTaken = (endTime - startTime) / 1000;
+                    processingTime.textContent = `${timeTaken.toFixed(1)} seconds`;
+                    
+                    // Show result info
+                    resultInfo.classList.remove('hidden');
+                    
+                    // Enable download button
+                    downloadBtn.disabled = false;
+                    
+                    // Reset process button
+                    processBtn.disabled = false;
+                    processBtn.innerHTML = '<i class="fas fa-magic"></i> Remove Background';
+                    
+                    showNotification('Background removed successfully!', 'success');
+                    
+                } catch (error) {
+                    console.error('Processing error:', error);
+                    showNotification('Error processing image: ' + error.message, 'error');
+                    resetProcessButton();
+                }
+            }
+            
+            function resetProcessButton() {
+                processBtn.disabled = false;
+                processBtn.innerHTML = '<i class="fas fa-magic"></i> Remove Background';
+                processProgress.style.width = '0%';
+            }
+            
+            function downloadImage() {
+                if (!processedImageData) return;
+                
+                const a = document.createElement('a');
+                a.href = processedImageData;
+                
+                // Create filename
+                const originalName = uploadedFile.name;
+                const extensionIndex = originalName.lastIndexOf('.');
+                const nameWithoutExtension = extensionIndex !== -1 ? 
+                    originalName.substring(0, extensionIndex) : 
+                    originalName;
+                
+                a.download = `${nameWithoutExtension}-nobg.png`;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                
+                showNotification('Image downloaded!', 'success');
+            }
+            
+            function resetTool() {
+                // Reset file input
+                fileInput.value = '';
+                
+                // Reset variables
+                uploadedFile = null;
+                processedImageData = null;
+                
+                // Reset UI
+                processBtn.disabled = true;
+                downloadBtn.disabled = true;
+                fileDetails.classList.add('hidden');
+                resultInfo.classList.add('hidden');
+                processProgress.style.width = '0%';
+                
+                // Reset images
+                originalImage.classList.add('hidden');
+                originalPlaceholder.classList.remove('hidden');
+                resultImage.classList.add('hidden');
+                resultPlaceholder.classList.remove('hidden');
+                
+                // Reset process button
+                processBtn.innerHTML = '<i class="fas fa-magic"></i> Remove Background';
+                
+                showNotification('Tool has been reset. Upload a new image.', 'success');
+            }
+        });
+    </script>
+</body>
+</html>
