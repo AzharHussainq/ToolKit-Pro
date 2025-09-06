@@ -19,7 +19,7 @@
       "applicationCategory": "MultimediaApplication",
       "operatingSystem": "Web Browser",
       "description": "Free online image editor with advanced editing tools. Crop, resize, add filters, adjust brightness, contrast and more.",
-      "url": "https://azharhussainq.github.io/ToolKit-Pro/image-editor",
+      "url": "https://www.toolkit-pro.com/image-editor",
       "offers": {
         "@type": "Offer",
         "price": "0",
@@ -66,30 +66,10 @@
             "@type": "Answer",
             "text": "No, all image processing happens directly in your browser. Your images are never uploaded to our servers, ensuring complete privacy."
           }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I use this editor on mobile devices?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, our image editor is fully responsive and works on all devices including smartphones and tablets."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What editing tools are available?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Our editor includes crop, resize, rotate, flip, brightness/contrast adjustment, saturation control, exposure correction, and multiple filters."
-          }
         }
       ]
     }
     </script>
-    
-    <!-- Popunder Ads -->
-    <script type='text/javascript' src='//specificallyglimmerdispose.com/24/55/37/245537e0e9d108a463e7d2e846816773.js'></script>
-    <script type='text/javascript' src='//specificallyglimmerdispose.com/31/d6/27/31d627f041dbf79dd4b7bd1e1b4c1c5e.js'></script>
     
     <style>
         :root {
@@ -486,35 +466,35 @@
             margin-top: 5px;
         }
         
-        /* Social Sharing Bar */
+        /* Social Bar */
         .social-bar {
             display: flex;
             justify-content: center;
-            gap: 15px;
+            gap: 10px;
             margin: 30px 0;
         }
         
-        .social-btn {
+        .social-item {
             display: flex;
             align-items: center;
-            justify-content: center;
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            color: white;
-            font-size: 1.2rem;
-            transition: var(--transition);
+            background: white;
+            padding: 12px 20px;
+            border-radius: 50px;
             box-shadow: var(--shadow);
+            font-weight: 500;
+            color: var(--dark);
+            transition: var(--transition);
         }
         
-        .social-btn:hover {
+        .social-item:hover {
             transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
         }
         
-        .facebook { background: #3b5998; }
-        .twitter { background: #1da1f2; }
-        .pinterest { background: #bd081c; }
-        .linkedin { background: #0077b5; }
+        .social-item i {
+            margin-right: 8px;
+            color: var(--primary);
+        }
         
         /* FAQ Section */
         .faq-section {
@@ -573,6 +553,10 @@
             .filter-options {
                 grid-template-columns: repeat(3, 1fr);
             }
+            
+            .social-bar {
+                flex-wrap: wrap;
+            }
         }
         
         /* Loading spinner */
@@ -611,6 +595,10 @@
     <script type="text/javascript" src="//specificallyglimmerdispose.com/9c4133c42f2c3dab1bc71003b21fc63e/invoke.js"></script>
 </head>
 <body>
+    <!-- Popunder Ads -->
+    <script type='text/javascript' src='//specificallyglimmerdispose.com/24/55/37/245537e0e9d108a463e7d2e846816773.js'></script>
+    <script type='text/javascript' src='//specificallyglimmerdispose.com/31/d6/27/31d627f041dbf79dd4b7bd1e1b4c1c5e.js'></script>
+
     <header>
         <div class="container">
             <div class="header-content">
@@ -676,11 +664,6 @@
                             <input type="range" id="saturation" min="-100" max="100" value="0">
                             <div class="value-display" id="saturationValue">0</div>
                         </div>
-                        <div class="tool-option">
-                            <label for="exposure">Exposure</label>
-                            <input type="range" id="exposure" min="-100" max="100" value="0">
-                            <div class="value-display" id="exposureValue">0</div>
-                        </div>
                     </div>
                     
                     <div class="tool-group">
@@ -691,7 +674,6 @@
                             <div class="filter-btn" data-filter="sepia">Sepia</div>
                             <div class="filter-btn" data-filter="vintage">Vintage</div>
                             <div class="filter-btn" data-filter="invert">Invert</div>
-                            <div class="filter-btn" data-filter="blur">Blur</div>
                         </div>
                     </div>
                     
@@ -729,12 +711,24 @@
             </div>
         </div>
         
-        <!-- Social Sharing Bar -->
+        <!-- Social Bar -->
         <div class="social-bar">
-            <a href="#" class="social-btn facebook" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-btn twitter" title="Share on Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-btn pinterest" title="Share on Pinterest"><i class="fab fa-pinterest-p"></i></a>
-            <a href="#" class="social-btn linkedin" title="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <div class="social-item">
+                <i class="fas fa-users"></i>
+                <span>125K+ Users</span>
+            </div>
+            <div class="social-item">
+                <i class="fas fa-star"></i>
+                <span>4.8 Rating</span>
+            </div>
+            <div class="social-item">
+                <i class="fas fa-image"></i>
+                <span>50K+ Edited</span>
+            </div>
+            <div class="social-item">
+                <i class="fas fa-clock"></i>
+                <span>Fast Processing</span>
+            </div>
         </div>
         
         <!-- Native Banner Bottom -->
@@ -760,21 +754,6 @@
             <div class="faq-item">
                 <div class="faq-question"><i class="fas fa-question"></i> Are my images stored on your servers?</div>
                 <div class="faq-answer">No, all image processing happens directly in your browser. Your images are never uploaded to our servers, ensuring complete privacy and security for your photos.</div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question"><i class="fas fa-question"></i> Can I use this editor on mobile devices?</div>
-                <div class="faq-answer">Yes, our image editor is fully responsive and works on all devices including smartphones and tablets. The interface adjusts automatically to provide the best experience on any screen size.</div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question"><i class="fas fa-question"></i> What editing tools are available?</div>
-                <div class="faq-answer">Our editor includes crop, resize, rotate, flip, brightness/contrast adjustment, saturation control, exposure correction, and multiple filters including black and white, sepia, vintage, invert colors, and blur effects.</div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question"><i class="fas fa-question"></i> How do I download my edited image?</div>
-                <div class="faq-answer">After editing your image, simply click the "Download Image" button. Your edited photo will be downloaded as a high-quality PNG file. The download should start automatically.</div>
             </div>
         </section>
         
@@ -818,7 +797,6 @@
             const brightnessSlider = document.getElementById('brightness');
             const contrastSlider = document.getElementById('contrast');
             const saturationSlider = document.getElementById('saturation');
-            const exposureSlider = document.getElementById('exposure');
             const resizeWidth = document.getElementById('resizeWidth');
             const resizeHeight = document.getElementById('resizeHeight');
             const resizeBtn = document.getElementById('resizeBtn');
@@ -828,19 +806,16 @@
             const brightnessValue = document.getElementById('brightnessValue');
             const contrastValue = document.getElementById('contrastValue');
             const saturationValue = document.getElementById('saturationValue');
-            const exposureValue = document.getElementById('exposureValue');
             
             // Variables
             let originalImage = null;
             let currentImage = null;
             let ctx = imageCanvas.getContext('2d');
-            let isEditing = false;
             let currentFilter = 'normal';
             let adjustments = {
                 brightness: 0,
                 contrast: 0,
-                saturation: 0,
-                exposure: 0
+                saturation: 0
             };
             
             // Initialize canvas
@@ -889,12 +864,6 @@
                 applyAdjustments();
             });
             
-            exposureSlider.addEventListener('input', function() {
-                adjustments.exposure = parseInt(this.value);
-                exposureValue.textContent = this.value;
-                applyAdjustments();
-            });
-            
             // Filter buttons
             filterButtons.forEach(btn => {
                 btn.addEventListener('click', function() {
@@ -907,14 +876,6 @@
             
             // Resize button
             resizeBtn.addEventListener('click', resizeImage);
-            
-            // Social sharing buttons
-            document.querySelectorAll('.social-btn').forEach(btn => {
-                btn.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    showNotification('Sharing feature will be implemented in the full version', 'error');
-                });
-            });
             
             // Functions
             function handleFileSelect(e) {
@@ -998,7 +959,6 @@
                 const brightnessFactor = adjustments.brightness * 2.55;
                 const contrastFactor = (259 * (adjustments.contrast + 255)) / (255 * (259 - adjustments.contrast));
                 const saturationFactor = adjustments.saturation / 100 + 1;
-                const exposureFactor = Math.pow(2, adjustments.exposure / 100);
                 
                 for (let i = 0; i < data.length; i += 4) {
                     // Brightness
@@ -1010,11 +970,6 @@
                     data[i] = constrain(contrastFactor * (data[i] - 128) + 128);
                     data[i + 1] = constrain(contrastFactor * (data[i + 1] - 128) + 128);
                     data[i + 2] = constrain(contrastFactor * (data[i + 2] - 128) + 128);
-                    
-                    // Exposure
-                    data[i] = constrain(data[i] * exposureFactor);
-                    data[i + 1] = constrain(data[i + 1] * exposureFactor);
-                    data[i + 2] = constrain(data[i + 2] * exposureFactor);
                     
                     // Saturation (convert to HSL would be better, but this is a simple approximation)
                     const gray = 0.2989 * data[i] + 0.5870 * data[i + 1] + 0.1140 * data[i + 2];
@@ -1056,9 +1011,6 @@
                         break;
                     case 'invert':
                         applyInvertFilter();
-                        break;
-                    case 'blur':
-                        applyBlurFilter();
                         break;
                     default:
                         // Normal - no filter applied
@@ -1123,13 +1075,6 @@
                 ctx.putImageData(imageData, 0, 0);
             }
             
-            function applyBlurFilter() {
-                // Simple blur effect (a more efficient approach would use convolution)
-                ctx.filter = 'blur(3px)';
-                ctx.drawImage(currentImage, 0, 0);
-                ctx.filter = 'none';
-            }
-            
             function startCrop() {
                 if (!currentImage) {
                     showNotification('Please upload an image first', 'error');
@@ -1137,8 +1082,6 @@
                 }
                 
                 showNotification('Crop feature will be implemented in the full version', 'error');
-                // In a full implementation, this would create a crop overlay
-                // with draggable handles to select the crop area
             }
             
             function rotateImage(degrees) {
@@ -1251,20 +1194,17 @@
                 brightnessSlider.value = 0;
                 contrastSlider.value = 0;
                 saturationSlider.value = 0;
-                exposureSlider.value = 0;
                 
                 // Reset value displays
                 brightnessValue.textContent = '0';
                 contrastValue.textContent = '0';
                 saturationValue.textContent = '0';
-                exposureValue.textContent = '0';
                 
                 // Reset adjustments
                 adjustments = {
                     brightness: 0,
                     contrast: 0,
-                    saturation: 0,
-                    exposure: 0
+                    saturation: 0
                 };
                 
                 // Reset filter
