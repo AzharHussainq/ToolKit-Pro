@@ -5,11 +5,14 @@
     <meta name="google-site-verification" content="p84FehMSqLUWEkLBdBup6AfPuyZ-Ks5y3Grj3s-j0js" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToolKit Pro - All-in-One Image & PDF Tools</title>
-    <meta name="description" content="Free online tools for images and PDFs. Compress, resize, convert, and optimize your files with our powerful tools.">
+    <title>ToolKit Pro - Free Online Image & PDF Tools | Compress, Convert, Edit</title>
+    <meta name="description" content="Free online tools for images and PDFs. Compress, resize, convert, and optimize your files with our powerful tools. No registration required. 100% secure.">
+    <meta name="keywords" content="image compressor, pdf tools, free online tools, image converter, pdf to word, compress images, resize images, online pdf tools, free image tools">
+    <link rel="canonical" href="https://azharhussainq.github.io/ToolKit-Pro/" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+    <!-- Adsterra Social Bar -->
+    <script type='text/javascript' src='//specificallyglimmerdispose.com/24/55/37/245537e0e9d108a463e7d2e846816773.js'></script>
     <style>
         :root {
             --primary: #4361ee;
@@ -219,12 +222,18 @@
             border-radius: 20px;
             transform: rotate(-5deg);
             z-index: -1;
+            opacity: 0.8;
         }
         
         .hero-image img {
             max-width: 100%;
             border-radius: 20px;
             box-shadow: var(--shadow);
+            transition: transform 0.5s ease;
+        }
+        
+        .hero-image:hover img {
+            transform: scale(1.02);
         }
         
         /* Tools Section */
@@ -467,6 +476,60 @@
             margin-bottom: 10px;
         }
         
+        /* FAQ Section */
+        .faq-section {
+            padding: 100px 0;
+            background: #f0f3ff;
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: white;
+            border-radius: var(--border-radius);
+            margin-bottom: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        .faq-question {
+            padding: 20px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: var(--transition);
+        }
+        
+        .faq-question:hover {
+            color: var(--primary);
+        }
+        
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            padding: 0 20px 20px;
+        }
+        
+        .faq-item.active .faq-toggle i {
+            transform: rotate(180deg);
+        }
+        
+        .faq-toggle {
+            transition: var(--transition);
+        }
+        
         /* CTA Section */
         .cta {
             padding: 100px 0;
@@ -633,6 +696,22 @@
             padding: 15px;
         }
         
+        /* Breadcrumb */
+        .breadcrumb {
+            padding: 15px 0;
+            font-size: 0.9rem;
+            color: var(--gray);
+        }
+        
+        .breadcrumb a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .breadcrumb span {
+            margin: 0 10px;
+        }
+        
         /* Side Navigation */
         .side-nav {
             position: fixed;
@@ -742,6 +821,10 @@
             .menu-toggle {
                 display: block;
             }
+            
+            .faq-question {
+                font-size: 1.1rem;
+            }
         }
         
         @media (max-width: 768px) {
@@ -760,6 +843,15 @@
             .cta h2 {
                 font-size: 2.2rem;
             }
+            
+            .feature-card {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .feature-icon {
+                margin: 0 auto 15px;
+            }
         }
         
         @media (max-width: 480px) {
@@ -774,6 +866,19 @@
             .btn {
                 width: 100%;
             }
+            
+            .faq-question {
+                font-size: 1rem;
+                padding: 15px;
+            }
+            
+            .faq-answer {
+                padding: 0 15px;
+            }
+            
+            .faq-item.active .faq-answer {
+                padding: 0 15px 15px;
+            }
         }
     </style>
 </head>
@@ -782,20 +887,20 @@
     <header>
         <div class="container">
             <nav class="navbar">
-                <a href="#" class="logo">
+                <a href="https://azharhussainq.github.io/ToolKit-Pro/" class="logo">
                     <i class="fas fa-toolbox"></i>
                     <span>ToolKit Pro</span>
                 </a>
                 <div class="nav-links">
-                    <a href="#">Home</a>
-                    <a href="#">Image Tools</a>
-                    <a href="#">PDF Tools</a>
-                    <a href="#">Features</a>
-                    <a href="#">Pricing</a>
+                    <a href="https://azharhussainq.github.io/ToolKit-Pro/">Home</a>
+                    <a href="image-tools.html">Image Tools</a>
+                    <a href="pdf-tools.html">PDF Tools</a>
+                    <a href="features.html">Features</a>
+                    <a href="pricing.html">Pricing</a>
                 </div>
                 <div class="nav-buttons">
-                    <a href="#" class="btn btn-outline">Sign In</a>
-                    <a href="#" class="btn btn-primary">Get Started</a>
+                    <a href="login.html" class="btn btn-outline">Sign In</a>
+                    <a href="register.html" class="btn btn-primary">Get Started</a>
                 </div>
                 <div class="menu-toggle" id="menuToggle">
                     <i class="fas fa-bars"></i>
@@ -816,18 +921,42 @@
             </div>
         </div>
         <ul class="side-nav-links">
-            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="#"><i class="fas fa-image"></i> Image Tools</a></li>
-            <li><a href="#"><i class="fas fa-file-pdf"></i> PDF Tools</a></li>
-            <li><a href="#"><i class="fas fa-file-alt"></i> Document Tools</a></li>
-            <li><a href="#"><i class="fas fa-star"></i> Features</a></li>
-            <li><a href="#"><i class="fas fa-tag"></i> Pricing</a></li>
-            <li><a href="#"><i class="fas fa-user"></i> My Account</a></li>
-            <li><a href="#"><i class="fas fa-question-circle"></i> Help Center</a></li>
-            <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><a href="https://azharhussainq.github.io/ToolKit-Pro/"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="image-tools.html"><i class="fas fa-image"></i> Image Tools</a></li>
+            <li><a href="pdf-tools.html"><i class="fas fa-file-pdf"></i> PDF Tools</a></li>
+            <li><a href="document-tools.html"><i class="fas fa-file-alt"></i> Document Tools</a></li>
+            <li><a href="features.html"><i class="fas fa-star"></i> Features</a></li>
+            <li><a href="pricing.html"><i class="fas fa-tag"></i> Pricing</a></li>
+            <li><a href="account.html"><i class="fas fa-user"></i> My Account</a></li>
+            <li><a href="help.html"><i class="fas fa-question-circle"></i> Help Center</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
         </ul>
     </div>
     <div class="overlay" id="overlay"></div>
+
+    <!-- Breadcrumb -->
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="https://azharhussainq.github.io/ToolKit-Pro/">Home</a>
+        </div>
+    </div>
+
+    <!-- Top Adsterra Banner Ad -->
+    <div class="container" style="margin-top: 20px;">
+        <div class="ad-container">
+            <div class="ad-label">ADVERTISEMENT</div>
+            <script type="text/javascript">
+                atOptions = {
+                    'key' : '9c4133c42f2c3dab1bc71003b21fc63e',
+                    'format' : 'iframe',
+                    'height' : 50,
+                    'width' : 320,
+                    'params' : {}
+                };
+            </script>
+            <script type="text/javascript" src="//specificallyglimmerdispose.com/9c4133c42f2c3dab1bc71003b21fc63e/invoke.js"></script>
+        </div>
+    </div>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -837,12 +966,12 @@
                     <h1>All Your <span>Image & PDF Tools</span> in One Place</h1>
                     <p>Powerful online tools to compress, convert, edit, and enhance your images and PDF documents. Fast, secure, and completely free to use!</p>
                     <div class="hero-buttons">
-                        <a href="#" class="btn btn-primary">Explore Tools</a>
-                        <a href="#" class="btn btn-outline">Learn More</a>
+                        <a href="tools.html" class="btn btn-primary">Explore Tools</a>
+                        <a href="about.html" class="btn btn-outline">Learn More</a>
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=1000" alt="ToolKit Pro Interface">
+                    <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=1000" alt="ToolKit Pro Interface - Free Online Image and PDF Tools">
                 </div>
             </div>
         </div>
@@ -853,16 +982,9 @@
         <div class="ad-container">
             <div class="ad-label">ADVERTISEMENT</div>
             <div class="ad-placeholder">
-                <!-- Google AdSense Auto Ads will appear here -->
-                <ins class="adsbygoogle"
-                     style="display:block"
-                     data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-                     data-ad-slot="XXXXXXXXXX"
-                     data-ad-format="auto"
-                     data-full-width-responsive="true"></ins>
-                <script>
-                     (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
+                <!-- Adsterra Native Banner will appear here -->
+                <script async="async" data-cfasync="false" src="//specificallyglimmerdispose.com/9cb10ef04b078295c1d17f98196e7638/invoke.js"></script>
+                <div id="container-9cb10ef04b078295c1d17f98196e7638"></div>
             </div>
         </div>
     </div>
@@ -882,7 +1004,7 @@
                             <i class="fas fa-compress-alt"></i>
                         </div>
                         <h3>Image Compressor</h3>
-                        <p>Reduce image file size without losing quality</p>
+                        <p>Reduce image file size without losing quality. Perfect for websites and social media.</p>
                         <span class="btn-sm">Use Tool</span>
                     </a>
                 </div>
@@ -893,7 +1015,7 @@
                             <i class="fas fa-expand-alt"></i>
                         </div>
                         <h3>Image Resizer</h3>
-                        <p>Resize images to any dimension instantly</p>
+                        <p>Resize images to any dimension instantly. Maintain aspect ratio or customize dimensions.</p>
                         <span class="btn-sm">Use Tool</span>
                     </a>
                 </div>
@@ -904,7 +1026,7 @@
                             <i class="fas fa-exchange-alt"></i>
                         </div>
                         <h3>Image Converter</h3>
-                        <p>Convert between JPG, PNG, WebP and more</p>
+                        <p>Convert between JPG, PNG, WebP, BMP and more formats. 100% free online tool.</p>
                         <span class="btn-sm">Use Tool</span>
                     </a>
                 </div>
@@ -916,7 +1038,7 @@
                             <i class="fas fa-file-pdf"></i>
                         </div>
                         <h3>PDF Compressor</h3>
-                        <p>Reduce PDF file size while preserving quality</p>
+                        <p>Reduce PDF file size while preserving quality. Perfect for email attachments.</p>
                         <span class="btn-sm">Use Tool</span>
                     </a>
                 </div>
@@ -927,7 +1049,7 @@
                             <i class="fas fa-file-word"></i>
                         </div>
                         <h3>PDF to Word</h3>
-                        <p>Convert PDF documents to editable Word files</p>
+                        <p>Convert PDF documents to editable Word files. Extract text with perfect formatting.</p>
                         <span class="btn-sm">Use Tool</span>
                     </a>
                 </div>
@@ -938,7 +1060,7 @@
                             <i class="fas fa-file-merge"></i>
                         </div>
                         <h3>PDF Merger</h3>
-                        <p>Combine multiple PDFs into a single document</p>
+                        <p>Combine multiple PDFs into a single document. Arrange pages in any order.</p>
                         <span class="btn-sm">Use Tool</span>
                     </a>
                 </div>
@@ -951,16 +1073,9 @@
         <div class="ad-container">
             <div class="ad-label">ADVERTISEMENT</div>
             <div class="ad-placeholder">
-                <!-- Google AdSense Auto Ads will appear here -->
-                <ins class="adsbygoogle"
-                     style="display:block"
-                     data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-                     data-ad-slot="XXXXXXXXXX"
-                     data-ad-format="auto"
-                     data-full-width-responsive="true"></ins>
-                <script>
-                     (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
+                <!-- Adsterra Native Banner will appear here -->
+                <script async="async" data-cfasync="false" src="//specificallyglimmerdispose.com/9cb10ef04b078295c1d17f98196e7638/invoke.js"></script>
+                <div id="container-9cb10ef04b078295c1d17f98196e7638"></div>
             </div>
         </div>
     </div>
@@ -1095,21 +1210,85 @@
         </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common questions about our online tools</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How do I compress an image without losing quality?</span>
+                        <div class="faq-toggle"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our image compressor uses advanced algorithms to reduce file size while maintaining visual quality. Simply upload your image, adjust the compression level if needed, and download the optimized version. The tool supports JPG, PNG, and WebP formats.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Are these tools completely free to use?</span>
+                        <div class="faq-toggle"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, all our basic tools are 100% free with no hidden charges. We offer premium features for power users, but the core functionality of image compression, PDF conversion, and other essential tools remains completely free.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Is my data secure when using your online tools?</span>
+                        <div class="faq-toggle"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely. We process all files directly in your browser using client-side technology. Your files are never uploaded to our servers, ensuring complete privacy and security. We don't store or access any of your documents.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What is the maximum file size I can process?</span>
+                        <div class="faq-toggle"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our free tools support files up to 100MB. For larger files, we offer premium plans that support files up to 1GB. The file size limit depends on your browser's capabilities and available memory.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can I use these tools on my mobile device?</span>
+                        <div class="faq-toggle"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, our website is fully responsive and works perfectly on all mobile devices. You can compress images, convert PDFs, and use all our tools directly from your smartphone or tablet browser.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What image formats does your converter support?</span>
+                        <div class="faq-toggle"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our image converter supports all popular formats including JPG, PNG, WebP, BMP, TIFF, and GIF. You can convert between any of these formats while maintaining image quality.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Ad Container 3 -->
     <div class="container">
         <div class="ad-container">
             <div class="ad-label">ADVERTISEMENT</div>
             <div class="ad-placeholder">
-                <!-- Google AdSense Auto Ads will appear here -->
-                <ins class="adsbygoogle"
-                     style="display:block"
-                     data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-                     data-ad-slot="XXXXXXXXXX"
-                     data-ad-format="auto"
-                     data-full-width-responsive="true"></ins>
-                <script>
-                     (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
+                <!-- Adsterra Native Banner will appear here -->
+                <script async="async" data-cfasync="false" src="//specificallyglimmerdispose.com/9cb10ef04b078295c1d17f98196e7638/invoke.js"></script>
+                <div id="container-9cb10ef04b078295c1d17f98196e7638"></div>
             </div>
         </div>
     </div>
@@ -1119,7 +1298,7 @@
         <div class="container">
             <h2>Ready to Transform Your Workflow?</h2>
             <p>Join thousands of satisfied users who save time with our powerful tools every day.</p>
-            <a href="#" class="btn btn-light">Get Started For Free</a>
+            <a href="register.html" class="btn btn-light">Get Started For Free</a>
         </div>
     </section>
 
@@ -1128,16 +1307,16 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <a href="#" class="logo">
+                    <a href="https://azharhussainq.github.io/ToolKit-Pro/" class="logo">
                         <i class="fas fa-toolbox"></i>
                         <span>ToolKit Pro</span>
                     </a>
                     <p>Powerful online tools to compress, convert, edit, and enhance your images and PDF documents.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://facebook.com/toolkitpro"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/toolkitpro"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/toolkitpro"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com/company/toolkitpro"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
                 
@@ -1166,11 +1345,11 @@
                 <div class="footer-col">
                     <h3>Company</h3>
                     <ul class="footer-links">
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Contact</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Terms of Service</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                        <li><a href="privacy.html"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                        <li><a href="terms.html"><i class="fas fa-chevron-right"></i> Terms of Service</a></li>
+                        <li><a href="blog.html"><i class="fas fa-chevron-right"></i> Blog</a></li>
                     </ul>
                 </div>
             </div>
@@ -1179,6 +1358,15 @@
             </div>
         </div>
     </footer>
+
+    <!-- Bottom Adsterra Ad -->
+    <div class="container">
+        <div class="ad-container">
+            <div class="ad-label">ADVERTISEMENT</div>
+            <script async="async" data-cfasync="false" src="//specificallyglimmerdispose.com/9cb10ef04b078295c1d17f98196e7638/invoke.js"></script>
+            <div id="container-9cb10ef04b078295c1d17f98196e7638"></div>
+        </div>
+    </div>
 
     <script>
         // Mobile Navigation
@@ -1221,8 +1409,18 @@
                 card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
                 observer.observe(card);
             });
+            
+            // FAQ functionality
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', () => {
+                    item.classList.toggle('active');
+                });
+            });
         });
     </script>
-    <script type='text/javascript' src='//specificallyglimmerdispose.com/24/55/37/245537e0e9d108a463e7d2e846816773.js'></script>
 </body>
 </html>
